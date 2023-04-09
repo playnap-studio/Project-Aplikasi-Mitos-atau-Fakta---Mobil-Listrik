@@ -6,15 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MobileWeatherTest.unity
+    path: Assets/AplikasiMitosFakta-MobilListrik/Scenes/MobileWeatherTest.unity
     guid: f555a9163b8897b4ca6d5044f04fbdd6
   - enabled: 1
-    path: Assets/Scenes/Story1.unity
+    path: Assets/AplikasiMitosFakta-MobilListrik/Scenes/Story1.unity
     guid: b2fb2410d54cf1349b4b676bfd5f7f47
   - enabled: 1
-    path: Assets/Scenes/Story2.unity
+    path: Assets/AplikasiMitosFakta-MobilListrik/Scenes/Story2.unity
     guid: 8907f78c7f3ffb048928bd0e7cb54c28
   - enabled: 1
-    path: Assets/Scenes/Story3.unity
+    path: Assets/AplikasiMitosFakta-MobilListrik/Scenes/Story3.unity
     guid: 56c18ed59ce64b94285ec8a694eb4af2
   m_configObjects: {}

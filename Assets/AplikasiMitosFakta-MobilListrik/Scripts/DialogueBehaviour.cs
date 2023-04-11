@@ -14,9 +14,8 @@ public class DialogueBehaviour : PlayableBehaviour
 	[Header("Choices Option")] public bool hasChoices = false;
 	[ConditionalHide("hasChoices", true)] public string dialogueFactLine;
 	[ConditionalHide("hasChoices", true)] public string dialogueMythLine;
-	Gameplay gameplay;
 	[ConditionalHide("hasChoices", true)] public bool isCorrectAnswer;
-	public int choiceIndex;
+	//private int currentChoiceDialogueIndex = 3;
 
 
 	private bool clipPlayed = false;
@@ -25,22 +24,15 @@ public class DialogueBehaviour : PlayableBehaviour
 
 	public override void OnPlayableCreate(Playable playable)
 	{
-		director = (playable.GetGraph().GetResolver() as PlayableDirector);
-		
+		director = (playable.GetGraph().GetResolver() as PlayableDirector);	
 	}
 
 	public override void ProcessFrame(Playable playable, FrameData info, object playerData)
 	{
-		
 		if(!clipPlayed
 			&& info.weight > 0f)
 		{
 			UIManager.Instance.SetDialogue(characterName, dialogueLine, dialogueSize);			
-			//UIManager.Instance.ToggleChoiceButton(true);
-			// if(hasChoices)
-			// {
-			// 	UIManager.Instance.ToggleChoiceButton(true);
-			// }
 			if(Application.isPlaying)
 			{
 				if(hasToPause)
@@ -50,29 +42,32 @@ public class DialogueBehaviour : PlayableBehaviour
 				
 				if(hasChoices)
 				{
-					Debug.Log("This Dialogue number Has Choices");
-                    // switch(GameManager.Instance.gameMode)
+					//UIManager.Instance.ToggleChoiceButton(true);
+					//UIManager.Instance.OverwriteNextDialogueText(dialogueFactLine);
+					//currentChoiceDialogueIndex = UIManager.Instance.currentDialogueIndex + 1;
+					// if (UIManager.Instance.currentDialogueIndex >= 3 && UIManager.Instance.currentDialogueIndex <= 3)
 					// {
-					// 	case GameManager.GameMode.DialogueMoment:
-					// 	Debug.Log("SKLDJMLJDLDJSLSDHLKSHNDNSLKN");
-						UIManager.Instance.ToggleChoiceButton(true);
-					// 	break;
+					// 	UIManager.Instance.OverwriteNextDialogueText("**This is choice response dialogue");
 					// }
-					if(isCorrectAnswer)
-					{
-						Debug.Log("Jawabanmu Benar!");
-						UIManager.Instance.OverwriteNextDialogueText(dialogueFactLine);
-					}
-					else
-					{
-						Debug.Log("Jawabanmu Salah");
-						UIManager.Instance.OverwriteNextDialogueText(dialogueMythLine);
-					}
+					// Debug.Log("This Dialogue has choices and choice index is " + currentChoiceDialogueIndex);
+					
+					// if(isCorrectAnswer)
+					// {
+					// 	Debug.Log("Jawabanmu Benar!");
+					// 	UIManager.Instance.OverwriteNextDialogueText(dialogueFactLine);
+					// }
+					// else
+					// {
+					// 	Debug.Log("Jawabanmu Salah");
+					// 	UIManager.Instance.OverwriteNextDialogueText(dialogueMythLine);
+					// }
 				}
-				// else
-				// {
-				// 	UIManager.Instance.ToggleChoiceButton(false);
-				// }
+				else
+				{
+					//currentChoiceDialogueIndex = -1;
+					//UIManager.Instance.ToggleChoiceButton(false);
+				}
+				
 			}
 			clipPlayed = true;
 		}
@@ -84,15 +79,12 @@ public class DialogueBehaviour : PlayableBehaviour
 		{
 			pauseScheduled = false;
 			GameManager.Instance.PauseTimeline(director);
-			//UIManager.Instance.ToggleChoiceButton(true);
 		}
 		else
 		{
 			UIManager.Instance.ToggleDialoguePanel(false);
-			
+			//UIManager.Instance.ToggleChoiceButton(false);
 		}
-		//UIManager.Instance.ToggleChoiceButton(false);
-		
 
 		clipPlayed = false;
 	}

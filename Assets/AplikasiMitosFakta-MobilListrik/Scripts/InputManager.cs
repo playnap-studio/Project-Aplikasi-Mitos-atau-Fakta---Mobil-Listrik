@@ -19,7 +19,8 @@ public class InputManager : Singleton<InputManager>
 				// if()
 				// {
                     UIManager.Instance.nextSentenceButton.onClick.AddListener(delegate { GameManager.Instance.ResumeTimeline(); });
-                    //IManager.Instance.factButton.onClick.AddListener(delegate { GameManager.Instance.ResumeTimeline(); });
+                    UIManager.Instance.factButton.onClick.AddListener(delegate { GameManager.Instance.ResumeTimeline(); });
+                    UIManager.Instance.mythButton.onClick.AddListener(delegate { GameManager.Instance.ResumeTimeline(); });
 					//GameManager.Instance.ResumeTimeline();
 				// }
 				break;

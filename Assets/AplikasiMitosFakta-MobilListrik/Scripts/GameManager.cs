@@ -29,10 +29,6 @@ public class GameManager : Singleton<GameManager>
 		gameMode = GameMode.DialogueMoment; //InputManager will be waiting for a spacebar to resume
 		UIManager.Instance.ToggleNextSentenceMessage(true);
 		
-		// if(dialogueBehaviour.hasChoices == true)
-		// {
-		// 	UIManager.Instance.ToggleChoiceButton(true);
-		// }
 		UIManager.Instance.ToggleChoiceButton(true);
 	}
 
@@ -40,12 +36,8 @@ public class GameManager : Singleton<GameManager>
 	public void ResumeTimeline()
 	{
 		UIManager.Instance.ToggleNextSentenceMessage(false);
-		// if(!dialogueBehaviour.hasChoices)
-		// {
-		// 	UIManager.Instance.ToggleChoiceButton(false);
-		// }
-		UIManager.Instance.ToggleDialoguePanel(false);
 		UIManager.Instance.ToggleChoiceButton(false);
+		UIManager.Instance.ToggleDialoguePanel(false);
 		activeDirector.playableGraph.GetRootPlayable(0).SetSpeed(1d);
 		gameMode = GameMode.Gameplay;
 	}

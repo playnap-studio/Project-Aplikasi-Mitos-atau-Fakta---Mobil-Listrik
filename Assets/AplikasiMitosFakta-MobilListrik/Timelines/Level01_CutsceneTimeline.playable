@@ -17,11 +17,8 @@ MonoBehaviour:
     dialogueLine: rererere
     dialogueSize: 30
     hasToPause: 1
-    hasChoices: 1
-    dialogueFactLine: 
-    dialogueMythLine: 
-    isCorrectAnswer: 0
-    choiceIndex: 0
+    isLastDialogue: 0
+    currentLastDialogueIndex: 0
 --- !u!114 &-7869559986031162705
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -55,11 +52,8 @@ MonoBehaviour:
     dialogueLine: Halo ALll mighty
     dialogueSize: 30
     hasToPause: 1
-    hasChoices: 0
-    dialogueFactLine: 
-    dialogueMythLine: 
-    isCorrectAnswer: 0
-    choiceIndex: 0
+    isLastDialogue: 0
+    currentLastDialogueIndex: 0
 --- !u!114 &-7002349220044221204
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -677,14 +671,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   template:
     characterName: 
-    dialogueLine: 
-    dialogueSize: 0
-    hasToPause: 0
-    hasChoices: 0
-    dialogueFactLine: 
-    dialogueMythLine: 
-    isCorrectAnswer: 0
-    choiceIndex: 0
+    dialogueLine: dadadada
+    dialogueSize: 30
+    hasToPause: 1
+    isLastDialogue: 1
+    currentLastDialogueIndex: 0
 --- !u!114 &-255802549072554188
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -702,11 +693,8 @@ MonoBehaviour:
     dialogueLine: Mitos atau Fakta, bisakah mobil listrik menerjang banjir?
     dialogueSize: 30
     hasToPause: 1
-    hasChoices: 0
-    dialogueFactLine: 
-    dialogueMythLine: 
-    isCorrectAnswer: 0
-    choiceIndex: 0
+    isLastDialogue: 0
+    currentLastDialogueIndex: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -765,8 +753,5 @@ MonoBehaviour:
       jika dilakukan terlalu sering.
     dialogueSize: 30
     hasToPause: 1
-    hasChoices: 1
-    dialogueFactLine: Dumdum Baka
-    dialogueMythLine: Baka Neesan!
-    isCorrectAnswer: 1
-    choiceIndex: 0
+    isLastDialogue: 0
+    currentLastDialogueIndex: 0

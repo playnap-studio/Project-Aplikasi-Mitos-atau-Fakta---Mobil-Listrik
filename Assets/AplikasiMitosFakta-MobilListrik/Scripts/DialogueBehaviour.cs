@@ -11,12 +11,8 @@ public class DialogueBehaviour : PlayableBehaviour
     public int dialogueSize;
 
 	public bool hasToPause = false;
-	[Header("Choices Option")] public bool hasChoices = false;
-	[ConditionalHide("hasChoices", true)] public string dialogueFactLine;
-	[ConditionalHide("hasChoices", true)] public string dialogueMythLine;
-	Gameplay gameplay;
-	[ConditionalHide("hasChoices", true)] public bool isCorrectAnswer;
-	public int choiceIndex;
+	[Header("Choices Option")] public bool isLastDialogue = false;
+	public int currentLastDialogueIndex = 0;
 
 
 	private bool clipPlayed = false;
@@ -25,22 +21,16 @@ public class DialogueBehaviour : PlayableBehaviour
 
 	public override void OnPlayableCreate(Playable playable)
 	{
-		director = (playable.GetGraph().GetResolver() as PlayableDirector);
-		
+		director = (playable.GetGraph().GetResolver() as PlayableDirector);	
 	}
 
 	public override void ProcessFrame(Playable playable, FrameData info, object playerData)
 	{
-		
 		if(!clipPlayed
 			&& info.weight > 0f)
 		{
+			UIManager.Instance.ToggleFinishButton(false);
 			UIManager.Instance.SetDialogue(characterName, dialogueLine, dialogueSize);			
-			//UIManager.Instance.ToggleChoiceButton(true);
-			// if(hasChoices)
-			// {
-			// 	UIManager.Instance.ToggleChoiceButton(true);
-			// }
 			if(Application.isPlaying)
 			{
 				if(hasToPause)
@@ -48,31 +38,19 @@ public class DialogueBehaviour : PlayableBehaviour
 					pauseScheduled = true;
 				}
 				
-				if(hasChoices)
+				if(isLastDialogue)
 				{
-					Debug.Log("This Dialogue number Has Choices");
-                    // switch(GameManager.Instance.gameMode)
-					// {
-					// 	case GameManager.GameMode.DialogueMoment:
-					// 	Debug.Log("SKLDJMLJDLDJSLSDHLKSHNDNSLKN");
-						UIManager.Instance.ToggleChoiceButton(true);
-					// 	break;
-					// }
-					if(isCorrectAnswer)
-					{
-						Debug.Log("Jawabanmu Benar!");
-						UIManager.Instance.OverwriteNextDialogueText(dialogueFactLine);
-					}
-					else
-					{
-						Debug.Log("Jawabanmu Salah");
-						UIManager.Instance.OverwriteNextDialogueText(dialogueMythLine);
-					}
+					// currentLastDialogueIndex store currentDialogueIndex (0 = 5 -> 5 = 5)
+					currentLastDialogueIndex = UIManager.Instance.currentDialogueIndex;
+					// tempCurrentLastDialogueIndex store currentLastDialogueIndex (0=5 -> 5=5)
+					UIManager.Instance.tempCurrentLastDialogueIndex = currentLastDialogueIndex;
+					Debug.Log(currentLastDialogueIndex + ", " + UIManager.Instance.tempCurrentLastDialogueIndex);
 				}
-				// else
-				// {
-				// 	UIManager.Instance.ToggleChoiceButton(false);
-				// }
+				else
+				{
+					UIManager.Instance.ToggleFinishButton(false);
+				}
+				
 			}
 			clipPlayed = true;
 		}
@@ -84,15 +62,11 @@ public class DialogueBehaviour : PlayableBehaviour
 		{
 			pauseScheduled = false;
 			GameManager.Instance.PauseTimeline(director);
-			//UIManager.Instance.ToggleChoiceButton(true);
 		}
 		else
 		{
 			UIManager.Instance.ToggleDialoguePanel(false);
-			
 		}
-		//UIManager.Instance.ToggleChoiceButton(false);
-		
 
 		clipPlayed = false;
 	}

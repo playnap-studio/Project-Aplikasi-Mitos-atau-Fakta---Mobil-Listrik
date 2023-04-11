@@ -70,3 +70,10 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+
+# Temporary
+Assets/ThirdPatySDK/UniStorm Weather System/URP Support/UniStorm URP Support.unitypackage.meta
+Assets/ThirdPatySDK/UniStorm Weather System/Network Integration/UnityPackages/UniStorm PUN 2 Integration.unitypackage.meta
+Assets/Plugins/AZURE Nature/SRP Packages/URP (2021.2+).unitypackage.meta
+Assets/Plugins/AZURE Nature/SRP Packages/URP (2019.4-2021.1).unitypackage.meta
+Assets/Plugins/AZURE Nature/SRP Packages/Built-in.unitypackage.meta

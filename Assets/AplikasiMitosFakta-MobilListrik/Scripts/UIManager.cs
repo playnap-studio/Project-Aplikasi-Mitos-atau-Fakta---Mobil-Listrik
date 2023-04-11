@@ -10,37 +10,35 @@ public class UIManager : Singleton<UIManager>
 	//public Image cameraLockedIcon;
 
 	public TextMeshProUGUI charNameText, dialogueLineText;
-	public GameObject toggleSpacebarMessage, dialoguePanel;
-	public Button nextSentenceButton;
-	public Button factButton;
-	public Button mythButton;
-	public int currentIndex = 0;
-	public int choiceIndex = 0;
-	public bool showChoice = false;
+	public GameObject toggleNextSentenceMessage, dialoguePanel;
+	public Button nextSentenceButton, factButton, mythButton, finishButton;
+	[TextAreaAttribute(4, 10)] public string factDialogueLine;
+	[TextAreaAttribute(4, 10)] public string mythDialogueLine;
+	public int currentDialogueIndex = 0;
+	public int choiceResponseDialogueIndex = 0;
+	public bool isFactButtonSelected = false;
+	public bool isMythButtonSelected = false;
+	public int tempCurrentLastDialogueIndex = 0;
+
+	Gameplay gameplay;
 
 	private void Start()
 	{
-		if (currentIndex > 0)
+		if (currentDialogueIndex > 0)
 		{
-			currentIndex = 0;
-			
+			currentDialogueIndex = 0;
 		}
-		
-		//countDialogueTrack = 0;
-		//selectionRectangle.enabled = false;
-		//cameraLockedIcon.enabled = false;
-		//nextSentenceButton.interactable = false;
 	}
 
 	void Update()
 	{
-		// if (GameQuit(true))
-		// {
-		// 	countDialogueTrack = 0;
-		// }
-		if (currentIndex >= 2 && currentIndex <=2)
+		if (isFactButtonSelected)
 		{
-			OverwriteNextDialogueText("Kontol");
+			OverwriteNextDialogueText(factDialogueLine);
+		}
+		if (isMythButtonSelected)
+		{
+			OverwriteNextDialogueText(mythDialogueLine);
 		}
 	}
 
@@ -55,27 +53,74 @@ public class UIManager : Singleton<UIManager>
 
 	public void ToggleNextSentenceMessage(bool active)
 	{
-		toggleSpacebarMessage.SetActive(active);
-		nextSentenceButton.interactable = active;
+		
+		if (currentDialogueIndex == (choiceResponseDialogueIndex-1))
+		{
+			toggleNextSentenceMessage.SetActive(active = false);
+			nextSentenceButton.interactable = active = false;
+			nextSentenceButton.gameObject.SetActive(active = false);
+		}
+		else
+		{
+			nextSentenceButton.gameObject.SetActive(true);
+			toggleNextSentenceMessage.SetActive(active);
+			nextSentenceButton.interactable = active;
+		}
 	}
 
 	public void ToggleDialoguePanel(bool active)
 	{
 		dialoguePanel.SetActive(active);
-		if(active == true)
+		if (Application.isPlaying)
 		{
-			currentIndex++;
+			if(active == true)
+			{
+				currentDialogueIndex++;
+			}
 		}
 	}
 
 	public void OverwriteNextDialogueText(string lineOfDialogue)
 	{
-		dialogueLineText.SetText(lineOfDialogue);
+		if (currentDialogueIndex >= choiceResponseDialogueIndex && currentDialogueIndex <= choiceResponseDialogueIndex)
+		{
+			dialogueLineText.SetText(lineOfDialogue);
+		}
 	}
 
 	public void ToggleChoiceButton(bool active)
 	{
-		factButton.gameObject.SetActive(active);
-		mythButton.gameObject.SetActive(active);
+		if (currentDialogueIndex == (choiceResponseDialogueIndex-1))
+		{
+			factButton.gameObject.SetActive(active);
+			mythButton.gameObject.SetActive(active);
+		}
+		else
+		{
+			factButton.gameObject.SetActive(active = false);
+			mythButton.gameObject.SetActive(active = false);
+		}	
+	}
+
+	public void IsFactButtonSelected(bool selected)
+	{
+		// nextSentenceButton.gameObject.SetActive(true);
+		isFactButtonSelected = selected;
+	}
+
+	public void IsMythButtonSelected(bool selected)
+	{
+		// nextSentenceButton.gameObject.SetActive(true);
+		isMythButtonSelected = selected;
+	}
+
+	public void ToggleFinishButton(bool active)
+	{
+		finishButton.gameObject.SetActive(active);
+		if (active == true)
+		{
+			//finishButton.onClick.AddListener(delegate {gameplay.UnlockNextLevelButton();});
+			Debug.Log("This is last dialogue sentence");
+		}
 	}
 }

@@ -19,6 +19,7 @@ public class GameManager : Singleton<GameManager>
 		// #endif
 		UIManager.Instance.ToggleNextSentenceMessage(false);
 		UIManager.Instance.ToggleChoiceButton(false);
+		UIManager.Instance.ToggleFinishButton(false);
 	}
 
 	//Called by the TimeMachine Clip (of type Pause)
@@ -28,24 +29,24 @@ public class GameManager : Singleton<GameManager>
 		activeDirector.playableGraph.GetRootPlayable(0).SetSpeed(0d);
 		gameMode = GameMode.DialogueMoment; //InputManager will be waiting for a spacebar to resume
 		UIManager.Instance.ToggleNextSentenceMessage(true);
-		
-		// if(dialogueBehaviour.hasChoices == true)
-		// {
-		// 	UIManager.Instance.ToggleChoiceButton(true);
-		// }
 		UIManager.Instance.ToggleChoiceButton(true);
+		if (UIManager.Instance.tempCurrentLastDialogueIndex == UIManager.Instance.currentDialogueIndex)
+		{
+			UIManager.Instance.ToggleFinishButton(true);
+			UIManager.Instance.ToggleNextSentenceMessage(false);
+			UIManager.Instance.ToggleChoiceButton(false);
+			Debug.Log("GAMEMANAGER : " + UIManager.Instance.tempCurrentLastDialogueIndex);
+		}
+
 	}
 
 	//Called by the InputManager
 	public void ResumeTimeline()
 	{
 		UIManager.Instance.ToggleNextSentenceMessage(false);
-		// if(!dialogueBehaviour.hasChoices)
-		// {
-		// 	UIManager.Instance.ToggleChoiceButton(false);
-		// }
-		UIManager.Instance.ToggleDialoguePanel(false);
 		UIManager.Instance.ToggleChoiceButton(false);
+		UIManager.Instance.ToggleDialoguePanel(false);
+		UIManager.Instance.ToggleFinishButton(false);
 		activeDirector.playableGraph.GetRootPlayable(0).SetSpeed(1d);
 		gameMode = GameMode.Gameplay;
 	}

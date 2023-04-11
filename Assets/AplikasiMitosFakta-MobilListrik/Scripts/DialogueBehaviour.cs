@@ -11,11 +11,8 @@ public class DialogueBehaviour : PlayableBehaviour
     public int dialogueSize;
 
 	public bool hasToPause = false;
-	[Header("Choices Option")] public bool hasChoices = false;
-	[ConditionalHide("hasChoices", true)] public string dialogueFactLine;
-	[ConditionalHide("hasChoices", true)] public string dialogueMythLine;
-	[ConditionalHide("hasChoices", true)] public bool isCorrectAnswer;
-	//private int currentChoiceDialogueIndex = 3;
+	[Header("Choices Option")] public bool isLastDialogue = false;
+	public int currentLastDialogueIndex = 0;
 
 
 	private bool clipPlayed = false;
@@ -32,6 +29,7 @@ public class DialogueBehaviour : PlayableBehaviour
 		if(!clipPlayed
 			&& info.weight > 0f)
 		{
+			UIManager.Instance.ToggleFinishButton(false);
 			UIManager.Instance.SetDialogue(characterName, dialogueLine, dialogueSize);			
 			if(Application.isPlaying)
 			{
@@ -40,32 +38,17 @@ public class DialogueBehaviour : PlayableBehaviour
 					pauseScheduled = true;
 				}
 				
-				if(hasChoices)
+				if(isLastDialogue)
 				{
-					//UIManager.Instance.ToggleChoiceButton(true);
-					//UIManager.Instance.OverwriteNextDialogueText(dialogueFactLine);
-					//currentChoiceDialogueIndex = UIManager.Instance.currentDialogueIndex + 1;
-					// if (UIManager.Instance.currentDialogueIndex >= 3 && UIManager.Instance.currentDialogueIndex <= 3)
-					// {
-					// 	UIManager.Instance.OverwriteNextDialogueText("**This is choice response dialogue");
-					// }
-					// Debug.Log("This Dialogue has choices and choice index is " + currentChoiceDialogueIndex);
-					
-					// if(isCorrectAnswer)
-					// {
-					// 	Debug.Log("Jawabanmu Benar!");
-					// 	UIManager.Instance.OverwriteNextDialogueText(dialogueFactLine);
-					// }
-					// else
-					// {
-					// 	Debug.Log("Jawabanmu Salah");
-					// 	UIManager.Instance.OverwriteNextDialogueText(dialogueMythLine);
-					// }
+					// currentLastDialogueIndex store currentDialogueIndex (0 = 5 -> 5 = 5)
+					currentLastDialogueIndex = UIManager.Instance.currentDialogueIndex;
+					// tempCurrentLastDialogueIndex store currentLastDialogueIndex (0=5 -> 5=5)
+					UIManager.Instance.tempCurrentLastDialogueIndex = currentLastDialogueIndex;
+					Debug.Log(currentLastDialogueIndex + ", " + UIManager.Instance.tempCurrentLastDialogueIndex);
 				}
 				else
 				{
-					//currentChoiceDialogueIndex = -1;
-					//UIManager.Instance.ToggleChoiceButton(false);
+					UIManager.Instance.ToggleFinishButton(false);
 				}
 				
 			}
@@ -83,7 +66,6 @@ public class DialogueBehaviour : PlayableBehaviour
 		else
 		{
 			UIManager.Instance.ToggleDialoguePanel(false);
-			//UIManager.Instance.ToggleChoiceButton(false);
 		}
 
 		clipPlayed = false;

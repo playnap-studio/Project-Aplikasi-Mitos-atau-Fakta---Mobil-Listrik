@@ -10,17 +10,17 @@ public class UIManager : Singleton<UIManager>
 	//public Image cameraLockedIcon;
 
 	public TextMeshProUGUI charNameText, dialogueLineText;
-	public GameObject toggleSpacebarMessage, dialoguePanel;
-	public Button nextSentenceButton;
-	public Button factButton;
-	public Button mythButton;
+	public GameObject toggleNextSentenceMessage, dialoguePanel;
+	public Button nextSentenceButton, factButton, mythButton, finishButton;
 	[TextAreaAttribute(4, 10)] public string factDialogueLine;
 	[TextAreaAttribute(4, 10)] public string mythDialogueLine;
 	public int currentDialogueIndex = 0;
 	public int choiceResponseDialogueIndex = 0;
 	public bool isFactButtonSelected = false;
 	public bool isMythButtonSelected = false;
-	DialogueBehaviour dialogueBehaviour = new DialogueBehaviour();
+	public int tempCurrentLastDialogueIndex = 0;
+
+	Gameplay gameplay;
 
 	private void Start()
 	{
@@ -53,13 +53,19 @@ public class UIManager : Singleton<UIManager>
 
 	public void ToggleNextSentenceMessage(bool active)
 	{
+		
 		if (currentDialogueIndex == (choiceResponseDialogueIndex-1))
 		{
-			toggleSpacebarMessage.SetActive(active = false);
+			toggleNextSentenceMessage.SetActive(active = false);
+			nextSentenceButton.interactable = active = false;
 			nextSentenceButton.gameObject.SetActive(active = false);
 		}
-		toggleSpacebarMessage.SetActive(active);
-		nextSentenceButton.gameObject.SetActive(active);
+		else
+		{
+			nextSentenceButton.gameObject.SetActive(true);
+			toggleNextSentenceMessage.SetActive(active);
+			nextSentenceButton.interactable = active;
+		}
 	}
 
 	public void ToggleDialoguePanel(bool active)
@@ -84,25 +90,37 @@ public class UIManager : Singleton<UIManager>
 
 	public void ToggleChoiceButton(bool active)
 	{
-		if (currentDialogueIndex != (choiceResponseDialogueIndex-1))
-		{
-			factButton.gameObject.SetActive(active = false);
-			mythButton.gameObject.SetActive(active = false);
-		}
-		else
+		if (currentDialogueIndex == (choiceResponseDialogueIndex-1))
 		{
 			factButton.gameObject.SetActive(active);
 			mythButton.gameObject.SetActive(active);
 		}
+		else
+		{
+			factButton.gameObject.SetActive(active = false);
+			mythButton.gameObject.SetActive(active = false);
+		}	
 	}
 
 	public void IsFactButtonSelected(bool selected)
 	{
+		// nextSentenceButton.gameObject.SetActive(true);
 		isFactButtonSelected = selected;
 	}
 
 	public void IsMythButtonSelected(bool selected)
 	{
+		// nextSentenceButton.gameObject.SetActive(true);
 		isMythButtonSelected = selected;
+	}
+
+	public void ToggleFinishButton(bool active)
+	{
+		finishButton.gameObject.SetActive(active);
+		if (active == true)
+		{
+			//finishButton.onClick.AddListener(delegate {gameplay.UnlockNextLevelButton();});
+			Debug.Log("This is last dialogue sentence");
+		}
 	}
 }

@@ -1,9 +1,29 @@
 fileFormatVersion: 2
-guid: 5e1c084094a389741b60d08fc89a3144
+guid: d55c734d077544648ae24d8bba0803df
 ModelImporter:
   serializedVersion: 20300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Garden_01_Black.004
+    second: {fileID: 2100000, guid: bcb07f4476a815044a84a2e64f179344, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Garden_01_Green.004
+    second: {fileID: 2100000, guid: 5e4b691a8bdb1c54ba992cbcfef2ddff, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Garden_01_Grey.004
+    second: {fileID: 2100000, guid: b3cfadde7f596ac40aeab1a85e43ef25, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Garden_02_Grey.004
+    second: {fileID: 2100000, guid: 706ec4bd41f00eb498b8273be9823cc8, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

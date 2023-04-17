@@ -1,9 +1,19 @@
 fileFormatVersion: 2
-guid: 5e1c084094a389741b60d08fc89a3144
+guid: d8147ae295a7ff44bbc472876bbf8841
 ModelImporter:
   serializedVersion: 20300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Building_01_DarkGreen.004
+    second: {fileID: 2100000, guid: 259d2e61ea0c90d4bad808021a55d148, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Building_01_Grey.004
+    second: {fileID: 2100000, guid: 91415a1bf8fee0048a1048675b6a39eb, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

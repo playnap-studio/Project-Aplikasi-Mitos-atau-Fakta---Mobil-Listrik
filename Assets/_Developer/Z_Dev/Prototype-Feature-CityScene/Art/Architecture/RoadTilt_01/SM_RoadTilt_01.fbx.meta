@@ -1,9 +1,19 @@
 fileFormatVersion: 2
-guid: 5e1c084094a389741b60d08fc89a3144
+guid: 068b977cf82a4934ea4cde6237e4720e
 ModelImporter:
   serializedVersion: 20300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Road_01_Black
+    second: {fileID: 2100000, guid: bc0deb95ffe98fa4090fa66c1af4e140, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Road_01_Grey
+    second: {fileID: 2100000, guid: d6417fa4ffafb5a4bb056b8ae7d60207, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

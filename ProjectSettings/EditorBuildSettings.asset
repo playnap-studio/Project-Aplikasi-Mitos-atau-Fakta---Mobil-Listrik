@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/AplikasiMitosFakta-MobilListrik/Scenes/MobileWeatherTest.unity
     guid: f555a9163b8897b4ca6d5044f04fbdd6
   - enabled: 1
-    path: Assets/_Developer/R_Dev/Prototype-Feature-DialogueSystem/Prototype-Feature-DialogueSystem.unity
+    path: Assets/_Developer/R_Dev/Prototype-Feature-Gameplay/Prototype-Feature-Gameplay.unity
     guid: f4041724b08c99449a2ad300020742ab
   - enabled: 1
     path: Assets/AplikasiMitosFakta-MobilListrik/Scenes/Story2.unity

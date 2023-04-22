@@ -1,0 +1,243 @@
+fileFormatVersion: 2
+guid: 5e1c084094a389741b60d08fc89a3144
+ModelImporter:
+  serializedVersion: 20300
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_GarageBox_01_DarkGrey.001
+    second: {fileID: 2100000, guid: 69fa9ae18d22b43438c7e5364d985157, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_GarageBox_01_DarkGrey.002
+    second: {fileID: 2100000, guid: 3801fa48c50820349872be09c44f243c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_GarageBox_01_DarkGrey.003
+    second: {fileID: 2100000, guid: 4c792abd0537e394bbefe109c6eca55c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_GarageBox_01_DarkGrey.004
+    second: {fileID: 2100000, guid: 2676e69f4f9a27d4080cd654197678ac, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_GarageBox_01_DarkGrey.005
+    second: {fileID: 2100000, guid: 83a2cfa44357a1543b94adaa35651d76, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_GarageBox_01_DarkGrey.006
+    second: {fileID: 2100000, guid: 2e1ccd7b4aff2ee41875f9b10b8a3f16, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_GarageBox_01_DarkGrey.007
+    second: {fileID: 2100000, guid: 01a6f402005d2944db8f97abd861d71f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_GarageBox_01_DarkGrey.008
+    second: {fileID: 2100000, guid: 0f1e458a037e7bb49b18fba6ca1f0812, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_GarageCupBoard_01_DarkGrey.001
+    second: {fileID: 2100000, guid: 2754bf804ee6cb143a85dee94ec76142, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_GarageCupBoard_01_DarkGrey.002
+    second: {fileID: 2100000, guid: 49e21f07a8351cb4db072dd938b8bb8a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_GarageCupBoard_01_DarkGrey.003
+    second: {fileID: 2100000, guid: 59b6853bdc3048b4c98d877c4d6be187, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_GarageCupBoard_01_DarkGrey.008
+    second: {fileID: 2100000, guid: 96cb84ddd7d0f4f4784ff861fd16652c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_GarageDoor_01_Black
+    second: {fileID: 2100000, guid: 6d6cb631bc3cb6d46a82e5b3a525b506, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_GarageDoor_01_DarkGreen
+    second: {fileID: 2100000, guid: f1dcda61e822840458ffc9db1bbeb7a2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_GarageDoor_02_Grey
+    second: {fileID: 2100000, guid: 2baf4c3c317519847a14d59f0f303d4a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_GarageFloor_01_Black
+    second: {fileID: 2100000, guid: 9ac9a3bbdecfdfa46937605cfcc19f5c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_GarageFloor_01_Grey.008
+    second: {fileID: 2100000, guid: cf0e03b6b3989964e85502b9bda7aab9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_GarageHanger_01_DarkGrey
+    second: {fileID: 2100000, guid: 12c6338c42fa96d4b921cf0328b22825, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_GarageRack_01_DarkGrey
+    second: {fileID: 2100000, guid: 1db070c176957044a93d52cb004c5cfd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_GarageRack_01_DarkGrey.001
+    second: {fileID: 2100000, guid: b56492d8fd876e543a0b4f80d1ca26d7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_GarageRack_01_DarkGrey.002
+    second: {fileID: 2100000, guid: 014d281b0636fc645a847da7a0cad234, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_GarageRedBox_01_Red
+    second: {fileID: 2100000, guid: 9e88e4ed1424a6c45bf4c483420b3d63, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_GarageRexBox_01_White
+    second: {fileID: 2100000, guid: 3976f8620a2ee374fbcf6f99604bc624, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_GarageRoof_01_Black
+    second: {fileID: 2100000, guid: 0fe01719dd5ffbd438f0847b28393c42, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_GarageRoof_01_Grey
+    second: {fileID: 2100000, guid: 7cd3170aaa4fb774e954e9e4b5b1059e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_GarageTV_01_Black
+    second: {fileID: 2100000, guid: bb6cf374a8b7b054595c213bc4a7ae38, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_GarageTV_01_Grey
+    second: {fileID: 2100000, guid: b76186a4baf7a4842a632715af5e696b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Garage_01_Grey
+    second: {fileID: 2100000, guid: 78b837be8bd829d4f949d88c6f4aa615, type: 2}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

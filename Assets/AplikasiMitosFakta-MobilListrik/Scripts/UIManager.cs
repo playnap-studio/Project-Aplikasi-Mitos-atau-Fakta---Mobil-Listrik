@@ -6,9 +6,6 @@ using TMPro;
 
 public class UIManager : Singleton<UIManager>
 {
-	//public Image selectionRectangle;
-	//public Image cameraLockedIcon;
-
 	public TextMeshProUGUI charNameText, dialogueLineText;
 	public GameObject toggleNextSentenceMessage, dialoguePanel;
 	public Button nextSentenceButton, factButton, mythButton, finishButton;
@@ -19,8 +16,6 @@ public class UIManager : Singleton<UIManager>
 	public bool isFactButtonSelected = false;
 	public bool isMythButtonSelected = false;
 	public int tempCurrentLastDialogueIndex = 0;
-
-	Gameplay gameplay;
 
 	private void Start()
 	{
@@ -104,13 +99,11 @@ public class UIManager : Singleton<UIManager>
 
 	public void IsFactButtonSelected(bool selected)
 	{
-		// nextSentenceButton.gameObject.SetActive(true);
 		isFactButtonSelected = selected;
 	}
 
 	public void IsMythButtonSelected(bool selected)
 	{
-		// nextSentenceButton.gameObject.SetActive(true);
 		isMythButtonSelected = selected;
 	}
 
@@ -119,7 +112,6 @@ public class UIManager : Singleton<UIManager>
 		finishButton.gameObject.SetActive(active);
 		if (active == true)
 		{
-			//finishButton.onClick.AddListener(delegate {gameplay.UnlockNextLevelButton();});
 			Debug.Log("This is last dialogue sentence");
 		}
 	}

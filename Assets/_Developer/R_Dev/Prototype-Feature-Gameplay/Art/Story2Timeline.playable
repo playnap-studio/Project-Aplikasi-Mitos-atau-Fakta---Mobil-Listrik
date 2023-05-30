@@ -131,10 +131,9 @@ MonoBehaviour:
   template:
     characterName: 
     dialogueLine: sadadasdasda
-    dialogueSize: 30
+    dialogueFontSize: 0
     hasToPause: 1
     isLastDialogue: 0
-    currentLastDialogueIndex: 0
 --- !u!114 &-2326377507249698655
 MonoBehaviour:
   m_ObjectHideFlags: 1

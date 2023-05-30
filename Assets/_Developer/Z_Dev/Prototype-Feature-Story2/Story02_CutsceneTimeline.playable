@@ -76,10 +76,9 @@ MonoBehaviour:
     characterName: Tosa
     dialogueLine: Tesla menyebut penarikan dilakukan karena adanya masalah software
       yang mengakibatkan sistem hiburan pada mobil mengalami overheating.
-    dialogueSize: 30
+    dialogueFontSize: 30
     hasToPause: 1
     isLastDialogue: 0
-    currentLastDialogueIndex: 0
 --- !u!114 &-8219036421335653613
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -117,10 +116,9 @@ MonoBehaviour:
   template:
     characterName: Tosa
     dialogueLine: 
-    dialogueSize: 30
+    dialogueFontSize: 30
     hasToPause: 1
     isLastDialogue: 0
-    currentLastDialogueIndex: 0
 --- !u!114 &-7407827762071432699
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -204,10 +202,9 @@ MonoBehaviour:
       Nasional (NHTSA) bug pada software dapat menyebabkan prosesor di sistem tersebut
       menjadi terlalu panas. Selanjutnya, prosesor akan melambat dan me-restart kembali
       sistem secara tiba-tiba.
-    dialogueSize: 30
+    dialogueFontSize: 30
     hasToPause: 1
     isLastDialogue: 0
-    currentLastDialogueIndex: 0
 --- !u!114 &-7012792800398106117
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -255,10 +252,9 @@ MonoBehaviour:
   template:
     characterName: Tosa
     dialogueLine: Halo semua kembali lagi bersama aku Tosa!
-    dialogueSize: 30
+    dialogueFontSize: 30
     hasToPause: 1
     isLastDialogue: 0
-    currentLastDialogueIndex: 0
 --- !u!114 &-6398145371282272674
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -405,10 +401,9 @@ MonoBehaviour:
     characterName: Tosa
     dialogueLine: Sekarang kita beralih ke pertanyaan kedua, menurutmu <b>Mitos</b>
       atau <b>Fakta</b> jika software pada mobil listrik tidak pernah mengalami masalah?
-    dialogueSize: 30
+    dialogueFontSize: 30
     hasToPause: 1
     isLastDialogue: 0
-    currentLastDialogueIndex: 0
 --- !u!114 &-5205272685812800296
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1892,10 +1887,9 @@ MonoBehaviour:
   template:
     characterName: Tosa
     dialogueLine: Lalu bagaimana daya tahan dan keamanan baterai pada mobil listrik?
-    dialogueSize: 30
+    dialogueFontSize: 30
     hasToPause: 1
     isLastDialogue: 0
-    currentLastDialogueIndex: 0
 --- !u!114 &-2944736567751359696
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3038,10 +3032,9 @@ MonoBehaviour:
     dialogueLine: 'Menurut fakta yang dilansir dari Engadget, bahwa pabrikan mobil
       listrik asal Amerika Serikat, yaitu Tesla dilaporkan telah menarik 130.000
       Unit mobil dari pasar. '
-    dialogueSize: 30
+    dialogueFontSize: 30
     hasToPause: 1
     isLastDialogue: 0
-    currentLastDialogueIndex: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3825,10 +3818,9 @@ MonoBehaviour:
     dialogueLine: Kinerja prosesor yang terganggu ini membuat layar tengah (Head
       Unit) tidak mampu beroperasi sehingga pengguna tidak bisa menampilkan gambar
       kamera spion, mengatur kontrol visibilitas kaca depan, dan lampu peringatan.
-    dialogueSize: 30
+    dialogueFontSize: 30
     hasToPause: 1
     isLastDialogue: 0
-    currentLastDialogueIndex: 0
 --- !u!114 &2245380799813921158
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5801,10 +5793,9 @@ MonoBehaviour:
   template:
     characterName: Tosa
     dialogueLine: Mari kita jawab pada video selanjutnya, sampai jumpa!
-    dialogueSize: 30
+    dialogueFontSize: 30
     hasToPause: 1
     isLastDialogue: 1
-    currentLastDialogueIndex: 0
 --- !u!114 &5684457026990268536
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6367,10 +6358,9 @@ MonoBehaviour:
       sama dengan mobil pada umumnya dan masalah ini masih terus diatasi, salah satunya
       pabrik mobil listrik Tesla yang melakukan upaya pengeluaran update software
       secara berkala. '
-    dialogueSize: 30
+    dialogueFontSize: 30
     hasToPause: 1
     isLastDialogue: 0
-    currentLastDialogueIndex: 0
 --- !u!114 &7337840471111466971
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -13,9 +13,9 @@ public class SceneryMenu : MonoBehaviour
     {
         PlayerPrefs.GetInt("_scenery", 0);
         sceneryAt = PlayerPrefs.GetInt("_sceneryButton", 0);
-        for (int i=0; i<sceneryButtons.Length; i++)
+        for (int i=1; i<sceneryButtons.Length; i++)
         {
-            if ((i+0) > sceneryAt)
+            if ((i+2) > sceneryAt)
             {
                 sceneryButtons[i].interactable = false;
             }

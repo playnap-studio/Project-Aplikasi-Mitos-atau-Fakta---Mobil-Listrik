@@ -9,14 +9,9 @@ public class GameManager : Singleton<GameManager>
 	public GameMode gameMode = GameMode.Gameplay;
 
 	private PlayableDirector activeDirector;
-	// DialogueBehaviour dialogueBehaviour = new DialogueBehaviour();
 
 	private void Awake()
 	{
-		//Cursor.lockState = CursorLockMode.Confined;
-		// #if UNITY_EDITOR
-		// Application.targetFrameRate = 30; //just to keep things "smooth" during presentations
-		// #endif
 		UIManager.Instance.ToggleNextSentenceMessage(false);
 		UIManager.Instance.ToggleChoiceButton(false);
 		UIManager.Instance.ToggleFinishButton(false);

@@ -22,9 +22,14 @@ public class SettingsMenu : MonoBehaviour
 
     public AudioMixer audioMixer;
 
+    void Awake()
+    {
+        
+    }
+
     void Start()
     {
-        currentQualityIndex = PlayerPrefs.GetInt("_qualityIndex", 2);
+        currentQualityIndex = PlayerPrefs.GetInt("_qualityIndex", 3);
         qualityDropdown.value = currentQualityIndex;
         QualitySettings.SetQualityLevel(currentQualityIndex);
 
@@ -36,6 +41,7 @@ public class SettingsMenu : MonoBehaviour
     void Update()
     {
         UniStorm.UniStormManager.Instance.SetMusicVolume(PlayerPrefs.GetFloat("_musicVolume", 1f));
+        SetMasterVolume(PlayerPrefs.GetFloat("_masterVolume", 1f));
     }
 
     public void SetQuality(int qualityIndex)

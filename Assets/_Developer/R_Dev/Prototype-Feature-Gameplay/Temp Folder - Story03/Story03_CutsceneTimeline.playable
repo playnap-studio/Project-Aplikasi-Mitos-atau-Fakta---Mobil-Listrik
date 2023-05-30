@@ -544,10 +544,9 @@ MonoBehaviour:
       terdapat beberapa kasus yang mencatat bahwa baterai rentan mengalami kerusakan
       yang menyebabkan terbakar atau meledak, tetapi kasus ini sangat jarang terjadi
       seiring pengembangan yang dilakukan oleh pabrikan.
-    dialogueSize: 30
+    dialogueFontSize: 30
     hasToPause: 1
     isLastDialogue: 0
-    currentLastDialogueIndex: 0
 --- !u!114 &-7977297599331977858
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -896,10 +895,9 @@ MonoBehaviour:
       dapat bertahan sangat lama, namun menurut beberapa penelitian, kinerja baterai
       mobil listrik umumnya akan menurun ketika penggunaan telah mencapai di atas
       3 tahun.
-    dialogueSize: 30
+    dialogueFontSize: 30
     hasToPause: 1
     isLastDialogue: 0
-    currentLastDialogueIndex: 0
 --- !u!114 &-5115866971770737621
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2125,10 +2123,9 @@ MonoBehaviour:
   template:
     characterName: Tosa
     dialogueLine: Terima kasih dan sampai jumpa!
-    dialogueSize: 30
+    dialogueFontSize: 30
     hasToPause: 1
     isLastDialogue: 1
-    currentLastDialogueIndex: 0
 --- !u!114 &-3671437573326052975
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2879,10 +2876,9 @@ MonoBehaviour:
     dialogueLine: Sekarang kita beralih ke pertanyaan ketiga, menurutmu <b>Mitos</b>
       atau <b>Fakta</b> jika daya tahan dan keamanan baterai pada mobil listrik itu
       lemah?
-    dialogueSize: 30
+    dialogueFontSize: 30
     hasToPause: 1
     isLastDialogue: 0
-    currentLastDialogueIndex: 0
 --- !u!114 &-2075749740753622851
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3356,10 +3352,9 @@ MonoBehaviour:
     characterName: Tosa
     dialogueLine: Tak hanya itu, di negara 4 musim, banyak yang mengeluhkan bahwa
       kemampuan baterai akan menurun drastis di suhu yang ekstrim dingin.
-    dialogueSize: 30
+    dialogueFontSize: 30
     hasToPause: 1
     isLastDialogue: 0
-    currentLastDialogueIndex: 0
 --- !u!114 &648483115455365067
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3480,10 +3475,9 @@ MonoBehaviour:
   template:
     characterName: Tosa
     dialogueLine: Halo semua kembali lagi bersama aku Tosa!
-    dialogueSize: 30
+    dialogueFontSize: 30
     hasToPause: 1
     isLastDialogue: 0
-    currentLastDialogueIndex: 0
 --- !u!114 &1241562573472321530
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3538,10 +3532,9 @@ MonoBehaviour:
     characterName: Tosa
     dialogueLine: Wah selamat kamu telah menamatkan cerita mitos atau fakta mobil
       listrik ini!
-    dialogueSize: 30
+    dialogueFontSize: 30
     hasToPause: 1
     isLastDialogue: 0
-    currentLastDialogueIndex: 0
 --- !u!114 &2050747380754932727
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4694,10 +4687,9 @@ MonoBehaviour:
       listrik akan mengalami penurunan ketika pemakaian telah mencapai lebih dari
       3 tahun. Faktor cuaca yang ekstrim juga mempengaruhi daya tahan dan keamanan
       dari baterai pada mobil listrik
-    dialogueSize: 30
+    dialogueFontSize: 30
     hasToPause: 1
     isLastDialogue: 0
-    currentLastDialogueIndex: 0
 --- !u!114 &3980477600294772103
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4716,10 +4708,9 @@ MonoBehaviour:
       akan terus melakukan pengembangan dan perbaikan untuk menjamin keamanan serta
       keselamatan konsumen sehingga mobil listrik bisa menjadi pilihan utama sebagai
       kendaraan yang hemat energi
-    dialogueSize: 30
+    dialogueFontSize: 30
     hasToPause: 1
     isLastDialogue: 0
-    currentLastDialogueIndex: 0
 --- !u!114 &4536363272339195200
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4735,10 +4726,9 @@ MonoBehaviour:
   template:
     characterName: Tosa
     dialogueLine: 
-    dialogueSize: 30
+    dialogueFontSize: 30
     hasToPause: 1
     isLastDialogue: 0
-    currentLastDialogueIndex: 0
 --- !u!114 &4742300118571168234
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4755,10 +4745,9 @@ MonoBehaviour:
     characterName: Tosa
     dialogueLine: Semoga informasi tentang mobil listrik ini bisa menjawab pertanyaanmu
       seputar mobil listrik ya...
-    dialogueSize: 30
+    dialogueFontSize: 30
     hasToPause: 1
     isLastDialogue: 0
-    currentLastDialogueIndex: 0
 --- !u!114 &5197002002475907442
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4990,10 +4979,9 @@ MonoBehaviour:
   template:
     characterName: Tosa
     dialogueLine: Pertama adalah isu daya tahan.
-    dialogueSize: 30
+    dialogueFontSize: 30
     hasToPause: 1
     isLastDialogue: 0
-    currentLastDialogueIndex: 0
 --- !u!114 &5359556062241115824
 MonoBehaviour:
   m_ObjectHideFlags: 1

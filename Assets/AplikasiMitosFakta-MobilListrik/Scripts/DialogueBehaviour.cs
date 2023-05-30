@@ -8,11 +8,11 @@ public class DialogueBehaviour : PlayableBehaviour
 {
     public string characterName;
 	[TextAreaAttribute(4, 10)] public string dialogueLine;
-    public int dialogueSize;
+    public int dialogueFontSize;
 
 	public bool hasToPause = false;
 	[Header("Choices Option")] public bool isLastDialogue = false;
-	public int currentLastDialogueIndex = 0;
+	private int currentLastDialogueIndex = 0;
 
 
 	private bool clipPlayed = false;
@@ -30,7 +30,7 @@ public class DialogueBehaviour : PlayableBehaviour
 			&& info.weight > 0f)
 		{
 			UIManager.Instance.ToggleFinishButton(false);
-			UIManager.Instance.SetDialogue(characterName, dialogueLine, dialogueSize);			
+			UIManager.Instance.SetDialogue(characterName, dialogueLine, dialogueFontSize);			
 			if(Application.isPlaying)
 			{
 				if(hasToPause)
@@ -60,7 +60,6 @@ public class DialogueBehaviour : PlayableBehaviour
 	{
 		if(pauseScheduled)
 		{
-			pauseScheduled = false;
 			GameManager.Instance.PauseTimeline(director);
 		}
 		else

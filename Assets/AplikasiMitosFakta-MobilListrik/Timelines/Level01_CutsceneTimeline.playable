@@ -39,10 +39,9 @@ MonoBehaviour:
     dialogueLine: Beliau menyatakan kendaraan listrik dipastikan aman jika terkena
       banjir karena kendaraan listrik sekarang rata-rata sudah berstandar IP yang
       mumpuni, misal IP 55, IP 45, dan lain-lain.
-    dialogueSize: 30
+    dialogueFontSize: 30
     hasToPause: 1
     isLastDialogue: 0
-    currentLastDialogueIndex: 0
 --- !u!114 &-9102886356315759858
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -58,10 +57,9 @@ MonoBehaviour:
   template:
     characterName: Tosa
     dialogueLine: Perkenalkan aku Tosa!
-    dialogueSize: 30
+    dialogueFontSize: 30
     hasToPause: 1
     isLastDialogue: 0
-    currentLastDialogueIndex: 0
 --- !u!114 &-9085559606113465819
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -371,6 +369,33 @@ MonoBehaviour:
   VirtualCamera:
     exposedName: 5f6f3d0989c3c0d44b6a6110ed312211
     defaultValue: {fileID: 0}
+--- !u!114 &-8266471801580404156
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b22792c3b570444eb18cb78c2af3a74, type: 3}
+  m_Name: Audio Track
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_AnimClip: {fileID: 0}
+  m_Locked: 0
+  m_Muted: 0
+  m_CustomPlayableFullTypename: 
+  m_Curves: {fileID: 0}
+  m_Parent: {fileID: -4415344110361959045}
+  m_Children: []
+  m_Clips: []
+  m_Markers:
+    m_Objects: []
+  m_TrackProperties:
+    volume: 1
+    stereoPan: 0
+    spatialBlend: 0
 --- !u!114 &-8253436475846160383
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -813,10 +838,9 @@ MonoBehaviour:
     characterName: Tosa
     dialogueLine: Hal ini juga didukung dengan pernyataan dari Toto Sukisno dosen
       pendidikan teknik elektro universitas negeri yogyakarta...
-    dialogueSize: 30
+    dialogueFontSize: 30
     hasToPause: 1
     isLastDialogue: 0
-    currentLastDialogueIndex: 0
 --- !u!114 &-7002349220044221204
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1108,10 +1132,9 @@ MonoBehaviour:
   template:
     characterName: Tosa
     dialogueLine: 
-    dialogueSize: 30
+    dialogueFontSize: 30
     hasToPause: 1
     isLastDialogue: 0
-    currentLastDialogueIndex: 0
 --- !u!114 &-5950452453184013109
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1152,10 +1175,9 @@ MonoBehaviour:
       tembus ke partisi penyimpan baterai. Namun bagaimanapun juga mobil listrik,
       termasuk juga mobil konvensional tidak didesain untuk bisa menerobos banjir
       dengan volume air yang tinggi.
-    dialogueSize: 30
+    dialogueFontSize: 30
     hasToPause: 1
     isLastDialogue: 0
-    currentLastDialogueIndex: 0
 --- !u!114 &-5141182524487453279
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1173,10 +1195,9 @@ MonoBehaviour:
     dialogueLine: Jadi, mobil listrik aman jika harus menerobos banjir dengan ketinggian
       tertentu karena sudah didukung dengan teknologi yang canggih sehingga mengurangi
       resiko kerusakan pada mesin mobil listrik
-    dialogueSize: 30
+    dialogueFontSize: 30
     hasToPause: 1
     isLastDialogue: 0
-    currentLastDialogueIndex: 0
 --- !u!114 &-5039062094198557446
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1462,7 +1483,6 @@ MonoBehaviour:
   - {fileID: -8194265114792053211}
   - {fileID: -1523185732091833292}
   - {fileID: 5117374263217660222}
-  - {fileID: 2727979322775140337}
   - {fileID: 3001408587268186395}
   - {fileID: 243778539125120565}
   - {fileID: 6284319697832877817}
@@ -3771,10 +3791,9 @@ MonoBehaviour:
   template:
     characterName: Tosa
     dialogueLine: Lalu bagaimana jika terjadi kendala pada software mobil listrik?
-    dialogueSize: 30
+    dialogueFontSize: 30
     hasToPause: 1
     isLastDialogue: 0
-    currentLastDialogueIndex: 0
 --- !u!114 &-2130749025831257340
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5223,10 +5242,9 @@ MonoBehaviour:
   template:
     characterName: ???
     dialogueLine: Halo semua!
-    dialogueSize: 30
+    dialogueFontSize: 30
     hasToPause: 1
     isLastDialogue: 0
-    currentLastDialogueIndex: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5512,10 +5530,9 @@ MonoBehaviour:
   template:
     characterName: Tosa
     dialogueLine: Mari kita jawab pada story selanjutnya, sampai jumpa!
-    dialogueSize: 30
+    dialogueFontSize: 30
     hasToPause: 1
     isLastDialogue: 1
-    currentLastDialogueIndex: 0
 --- !u!114 &709152346915415767
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5544,10 +5561,9 @@ MonoBehaviour:
     characterName: Tosa
     dialogueLine: Namun, jika ketinggian banjir sudah menyentuh separuh mobil maka
       mesin kendaraan akan terendam hingga menyebabkan komponen di dalamnya bermasalah.
-    dialogueSize: 30
+    dialogueFontSize: 30
     hasToPause: 1
     isLastDialogue: 0
-    currentLastDialogueIndex: 0
 --- !u!114 &953231118079645371
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5882,10 +5898,9 @@ MonoBehaviour:
     dialogueLine: Dilansir dari laman Auto2000, motor pada mobil listrik tidak didesain
       untuk menerobos banjir. Jika ketinggian banjir masih separuh ban, maka masih
       bisa ditoleransi.
-    dialogueSize: 30
+    dialogueFontSize: 30
     hasToPause: 1
     isLastDialogue: 0
-    currentLastDialogueIndex: 0
 --- !u!114 &1517136421271485820
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6376,47 +6391,6 @@ MonoBehaviour:
   m_Loop: 0
   m_Version: 1
   m_Rotation: {x: 0, y: 0, z: 0, w: 1}
---- !u!114 &2727979322775140337
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d21dcc2386d650c4597f3633c75a1f98, type: 3}
-  m_Name: Animation Track (5)
-  m_EditorClassIdentifier: 
-  m_Version: 3
-  m_AnimClip: {fileID: 0}
-  m_Locked: 0
-  m_Muted: 0
-  m_CustomPlayableFullTypename: 
-  m_Curves: {fileID: 0}
-  m_Parent: {fileID: -4415344110361959045}
-  m_Children: []
-  m_Clips: []
-  m_Markers:
-    m_Objects: []
-  m_InfiniteClipPreExtrapolation: 1
-  m_InfiniteClipPostExtrapolation: 1
-  m_InfiniteClipOffsetPosition: {x: 0, y: 0, z: 0}
-  m_InfiniteClipOffsetEulerAngles: {x: 0, y: 0, z: 0}
-  m_InfiniteClipTimeOffset: 0
-  m_InfiniteClipRemoveOffset: 0
-  m_InfiniteClipApplyFootIK: 1
-  mInfiniteClipLoop: 0
-  m_MatchTargetFields: 63
-  m_Position: {x: 0, y: 0, z: 0}
-  m_EulerAngles: {x: 0, y: 0, z: 0}
-  m_AvatarMask: {fileID: 0}
-  m_ApplyAvatarMask: 1
-  m_TrackOffset: 0
-  m_InfiniteClip: {fileID: 0}
-  m_OpenClipOffsetRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_Rotation: {x: 0, y: 0, z: 0, w: 1}
-  m_ApplyOffsets: 0
 --- !u!114 &3001408587268186395
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6527,6 +6501,29 @@ MonoBehaviour:
   m_OpenClipOffsetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_Rotation: {x: 0, y: 0, z: 0, w: 1}
   m_ApplyOffsets: 0
+--- !u!114 &3335824140416657739
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1346d2f0183152c4cb1dcc0943f09a11, type: 3}
+  m_Name: Dialogue Track (1)
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_AnimClip: {fileID: 0}
+  m_Locked: 0
+  m_Muted: 0
+  m_CustomPlayableFullTypename: 
+  m_Curves: {fileID: 0}
+  m_Parent: {fileID: 11400000}
+  m_Children: []
+  m_Clips: []
+  m_Markers:
+    m_Objects: []
 --- !u!74 &3419973241550869428
 AnimationClip:
   m_ObjectHideFlags: 0
@@ -7966,15 +7963,15 @@ AnimationClip:
         time: 5
         value: {x: 0, y: -1.24, z: 10.7}
         inSlope: {x: -0, y: -0.67, z: 4.5099998}
-        outSlope: {x: 0, y: 0, z: 3.386667}
+        outSlope: {x: 0, y: 0, z: 4.166667}
         tangentMode: 0
         weightedMode: 0
         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
         time: 8
-        value: {x: 0, y: -1.24, z: 20.86}
-        inSlope: {x: -0, y: -0, z: 3.386667}
+        value: {x: 0, y: -1.24, z: 23.2}
+        inSlope: {x: -0, y: -0, z: 4.166667}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
         weightedMode: 0
@@ -8228,15 +8225,15 @@ AnimationClip:
         time: 5
         value: 10.7
         inSlope: 4.5099998
-        outSlope: 3.386667
+        outSlope: 4.166667
         tangentMode: 69
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 8
-        value: 20.86
-        inSlope: 3.386667
+        value: 23.2
+        inSlope: 4.166667
         outSlope: 0
         tangentMode: 69
         weightedMode: 0
@@ -8921,7 +8918,7 @@ MonoBehaviour:
     m_Start: 16.7
     m_ClipIn: 0
     m_Asset: {fileID: 1949577995744936734}
-    m_Duration: 8
+    m_Duration: 10.866666666666639
     m_TimeScale: 1
     m_ParentTrack: {fileID: 6284319697832877817}
     m_EaseInDuration: 0
@@ -8983,7 +8980,7 @@ MonoBehaviour:
     m_Recordable: 1
     m_PostExtrapolationMode: 1
     m_PreExtrapolationMode: 1
-    m_PostExtrapolationTime: 2.8666666666666387
+    m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
     m_DisplayName: Recorded (2)
   - m_Version: 1
@@ -8999,25 +8996,7 @@ MonoBehaviour:
     m_BlendOutDuration: -1
     m_MixInCurve:
       serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
+      m_Curve: []
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -9355,10 +9334,9 @@ MonoBehaviour:
     characterName: Tosa
     dialogueLine: Disini aku akan menjelaskan beberapa pertanyaan yang sering muncul
       mengenai mobil listrik
-    dialogueSize: 30
+    dialogueFontSize: 30
     hasToPause: 1
     isLastDialogue: 0
-    currentLastDialogueIndex: 0
 --- !u!74 &7122772925893523671
 AnimationClip:
   m_ObjectHideFlags: 0
@@ -9487,12 +9465,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   template:
     characterName: Tosa
-    dialogueLine: Mari kita mulai dengan pertanyaan pertama, bisakah mobil listrik
-      menerjang banjir? Menurutmu pernyataan ini Mitos atau Fakta?
-    dialogueSize: 30
+    dialogueLine: Mari kita mulai dengan pertanyaan pertama, menurutmu <b>Mitos</b>
+      atau <b>Fakta</b> jika mobil listrik bisa menerjang banjir?
+    dialogueFontSize: 30
     hasToPause: 1
     isLastDialogue: 0
-    currentLastDialogueIndex: 0
 --- !u!114 &7647300880386501362
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10048,10 +10025,9 @@ MonoBehaviour:
     dialogueLine: Menurut salah satu pendiri perusahaan mobil listrik yaitu <b>Elon
       Musk</b> mengatakan bahwa menurutnya kendaraan canggih tersebut aman saat melalui
       genangan air. Namun tetap saja tak baik jika dilakukan terlalu sering.
-    dialogueSize: 30
+    dialogueFontSize: 30
     hasToPause: 1
     isLastDialogue: 0
-    currentLastDialogueIndex: 0
 --- !u!74 &9219322760227198370
 AnimationClip:
   m_ObjectHideFlags: 0

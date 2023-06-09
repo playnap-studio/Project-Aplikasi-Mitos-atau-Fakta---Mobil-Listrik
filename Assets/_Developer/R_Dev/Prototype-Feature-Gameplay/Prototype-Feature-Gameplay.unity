@@ -10742,7 +10742,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1525363399553741149, guid: 5cac78bebe6491d4ba74ddb0d6d39e17, type: 3}
       propertyPath: m_Name
-      value: DialogueBox
+      value: UI_DialogueBox
       objectReference: {fileID: 0}
     - target: {fileID: 1525363399706443695, guid: 5cac78bebe6491d4ba74ddb0d6d39e17, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -10909,7 +10909,7 @@ PrefabInstance:
     - target: {fileID: 2270695089472964761, guid: 47711e19d5e3f0249a26837c9cb9e58a, type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: f4dd753716499aa4eaf24a52e9729dbe, type: 3}
+      objectReference: {fileID: 8300000, guid: 2211e4b9960a3eb419132afef5c8825d, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47711e19d5e3f0249a26837c9cb9e58a, type: 3}
 --- !u!1 &4118429255676150547 stripped

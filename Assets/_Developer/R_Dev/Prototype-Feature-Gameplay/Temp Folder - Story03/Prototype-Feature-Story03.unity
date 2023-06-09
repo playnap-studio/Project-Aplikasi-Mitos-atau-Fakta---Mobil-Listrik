@@ -6022,7 +6022,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1525363399553741149, guid: 5cac78bebe6491d4ba74ddb0d6d39e17, type: 3}
       propertyPath: m_Name
-      value: DialogueBox
+      value: UI_DialogueBox
       objectReference: {fileID: 0}
     - target: {fileID: 1525363399706443695, guid: 5cac78bebe6491d4ba74ddb0d6d39e17, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target

@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
-  m_Name: RobotoCondensed-BoldItalic SDF
+  m_Name: Font_RobotoCondensed-BoldItalic SDF
   m_EditorClassIdentifier: 
   hashCode: -59792521
   material: {fileID: 833916149317029886}
